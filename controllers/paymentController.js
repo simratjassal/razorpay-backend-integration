@@ -39,6 +39,7 @@ export const paymentVerification = async (req, res) => {
 
     res.redirect(
       `https://razorpay-frontend-integr-2a85d.web.app/paymentsuccess?reference=${razorpay_payment_id}`
+//       Firebase frontend hosting url
     );
   } else {
     res.status(400).json({
